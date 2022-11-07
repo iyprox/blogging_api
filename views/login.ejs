@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<div class="main">
+  <h3>Login to start posting blogs</h3>
+  <form action="/api/auth/login" method="post">
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email address" name="email" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        name="password"
+      />
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

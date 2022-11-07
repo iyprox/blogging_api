@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<div class="main">
+  <h3>Signup to start posting blogs</h3>
+  <form action="/api/auth/signup" method="post">
+    <div>
+      <label for="first_name">First Name</label>
+      <input id="first_name" placeholder="First Name" name="first_name" />
+    </div>
+    <div>
+      <label for="last_name">Last Name</label>
+      <input id="last_name" placeholder="Last Name" name="last_name" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email address" name="email" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        name="password"
+      />
+    </div>
+
+    <button type="submit">Signup</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
